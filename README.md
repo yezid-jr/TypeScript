@@ -32,55 +32,67 @@ node -v //debería mostrarte la versión que está instalada ejemplo: v22.16.0
 npm -v
 ```
 ### 2. Crear un nuevo directorio para tu proyecto y entrar en él:
+```bash
 mkdir mi-proyecto-typescript
 cd mi-proyecto-typescript
+```
 
-# 3. Inicializar un proyecto npm:
+### 3. Inicializar un proyecto npm:
+```bash
 npm init -y
+```
+Esto crea un archivo package.json con configuración por defecto.
 
-# Esto crea un archivo package.json con configuración por defecto.
-
-# 4. Instalar TypeScript como dependencia de desarrollo:
+### 4. Instalar TypeScript como dependencia de desarrollo:
+```bash
 npm install typescript --save-dev
+```
 
-# 5. Crear un archivo de configuración de TypeScript (tsconfig.json):
+### 5. Crear un archivo de configuración de TypeScript (tsconfig.json):
+```bash
 npx tsc --init
+```
 
-# Esto genera un tsconfig.json donde puedes personalizar la compilación.
+Esto genera un tsconfig.json donde puedes personalizar la compilación.
 
-# 6. Crear un directorio para tu código fuente y un archivo TypeScript:
+### 6. Crear un directorio para tu código fuente y un archivo TypeScript:
+```bash
 mkdir src
 touch src/index.ts
+```
 
-# 7. Escribir tu primer archivo TypeScript:
-# Abre src/index.ts y escribe el siguiente código:
+### 7. Escribir tu primer archivo TypeScript:
 
-# const saludo: string = "Hola, TypeScript!";
-# console.log(saludo);
-
-# 8. Compilar el código TypeScript a JavaScript:
+Abre src/index.ts y escribe el siguiente código:
+```bash
+const saludo: string = "Hola, TypeScript!";
+console.log(saludo);
+```
+### 8. Compilar el código TypeScript a JavaScript:
+```bash
 npx tsc
+```
+Esto genera un archivo JavaScript equivalente (por defecto en el mismo directorio, a menos que configures otra carpeta en tsconfig.json).
 
-# Esto genera un archivo JavaScript equivalente (por defecto en el mismo directorio, a menos que configures otra carpeta en tsconfig.json).
-
-# 9. Ejecutar el archivo compilado con Node.js:
+### 9. Ejecutar el archivo compilado con Node.js:
+```bash
 node src/index.js
+```
+---
 
-# ----------------------------------------
-# Curiosidades sobre TypeScript
-# ----------------------------------------
+### Curiosidades sobre TypeScript
 
-# - Fue creado por Microsoft en 2012.
-# - Angular (framework de Google) está completamente escrito en TypeScript.
-# - Es compatible con React, Vue, Node.js, entre otros.
-# - Tiene una curva de aprendizaje suave para quienes ya conocen JavaScript.
-# - Es uno de los lenguajes más amados según encuestas de Stack Overflow.
-# - Puedes usarlo de forma incremental en proyectos JavaScript existentes.
 
-# ----------------------------------------
-# Recursos útiles
-# ----------------------------------------
+- Fue creado por Microsoft en 2012.
+- Angular (framework de Google) está completamente escrito en TypeScript.
+- Es compatible con React, Vue, Node.js, entre otros.
+- Tiene una curva de aprendizaje suave para quienes ya conocen JavaScript.
+- Es uno de los lenguajes más amados según encuestas de Stack Overflow.
+- Puedes usarlo de forma incremental en proyectos JavaScript existentes.
 
-# - Documentación oficial: https://www.typescriptlang.org/docs/
-# - Playground en línea: https://www.typescriptlang.org/play
-# - Curso gratuito en YouTube: https://www.youtube.com/results?search_query=typescript+curso
+
+## Recursos útiles
+
+- Documentación oficial: https://www.typescriptlang.org/docs/
+- Playground en línea: https://www.typescriptlang.org/play
+- Curso gratuito en YouTube: https://www.youtube.com/results?search_query=typescript+curso
